@@ -7,4 +7,4 @@ Get list of plugins:
 Import plugins:
 	cat msvsc/msvsc-extensions.txt | xargs -L 1 echo code --install-extension
 
-	type msvsc/msvsc-extensions.txt | % { "code --install-extension $_" }
+	type msvsc/msvsc-extensions.txt | % { &code --install-extension $_ }
